@@ -1,0 +1,1 @@
+docker container create --name postgresdata --publish 5434:5432 --mount "type=bind,source=folder nyimpan data,destination=/var/lib/postgresql/data" --env POSTGRES_USER=postgres --env POSTGRES_PASSWORD=kadatahu postgres:alpine3.16
